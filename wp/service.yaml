@@ -10,10 +10,10 @@ metadata:
 spec:
   type: NodePort
   ports:
-  - port: 8888            # the port on which the service is listening
+  - port: 8888           
     protocol: TCP
-    targetPort: 80       # the port exposed by Pod (we defined in the deployment as part of `containerPort)
+    targetPort: 80      
   selector:
     app: wp-app
     env: dev
-    stack: wordpress       # Pod label that service is using to select Pods
+    stack: wordpress      
